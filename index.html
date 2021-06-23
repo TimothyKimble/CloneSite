@@ -12,10 +12,60 @@
   <title>Cloning Around</title>
 </head>
 
-<body>
-  <header></header>
+<style>
+  body.debug .container,
+  body.debug .container-fluid {
+    outline: 2px double blue;
+    outline-offset: -2px;
+  }
 
-  <main></main>
+  body.debug .row {
+    outline: 2px dashed red;
+    outline-offset: -2px;
+  }
+
+  body.debug [class*="col-"] {
+    outline: 2px dotted forestgreen;
+    outline-offset: -3px;
+  }
+</style>
+
+<body>
+  <header class="container">
+    <div class="row">
+      <div class="col-4 text-center">
+        GetaCat
+      </div>
+      <div class="col-4 text-center">
+        <button>Adopt Now!</button>
+      </div>
+      <div>
+        <a href="tel:1-999-999-999"> Give us a Call (999)-999-9999</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <container>
+      <div class="row ">
+        <div class="col-5 text-center">
+          <div> Big Cats, Small Cats</div>
+          <div class="row">
+            <div class="col-6 text-center"> <button>Send us Cats</button></div>
+            <div class="col-6 text-center"><button>Download Cats</button></div>
+          </div>
+        </div>
+        <div class="col-7"> <img src="http://placekitten.com/300/300" alt="catpic"><img>
+        </div>
+      </div>
+    </container>
+    <container>
+
+    </container>
+    <container>
+
+    </container>
+  </main>
 
   <footer></footer>
 </body>
