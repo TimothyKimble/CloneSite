@@ -32,18 +32,26 @@
 </style>
 
 <body class="debug">
-  <header class="container-fluid sticky-top">
-    <div class="row">
-      <div class="col-4 h4 text-light text-center">
-        GetaCat
+  <header class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">GetaCat</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Adopt<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="tel:999999999">(999) 999-999</a>
+          </li>
+        </ul>
       </div>
-      <div class="col-4  h4 text-center ">
-        <button type="button" class="btn text-light  btn-primary">Adopt Now!</button>
-      </div>
-      <div class="col-4 h4  callus text-center">
-        <a href="tel:1-999-999-999"> Call Us (999)-999-9999</a>
-      </div>
-    </div>
+    </nav>
+
   </header>
 
   <main>
@@ -62,10 +70,10 @@
           adopt!</div>
 
         <div class="row">
-          <div class="col-6 text-center"> <button type="button" class="btn btn-primary p-2 btnmargin">Send us
+          <div class="text-center"> <button type="button" class="btn btn-primary p-2 btnmargin">Send us
               Cats</button>
           </div>
-          <div class="col-6 text-center"><button type="button" class="btn btn-primary btnmargin p-2 ">Download
+          <div class=" text-center"><button type="button" class="btn btn-primary btnmargin p-2 ">Download
               Cats</button>
           </div>
         </div>
@@ -79,40 +87,30 @@
       </div>
     </div>
 
-    <div class="row">
-      <div class="  col-4 md-col-12 d-flex d-md-block text-center justify-content-center ">
-        <div class="card  ">
-          <img class=" card-img-top cat2">
-          <div class=" card-body">
-            <h4 class=" card-title text-center">See the Floof</h4>
-            <p class=" card-text"></p>
-          </div>
-        </div>
+    <div class="row ">
+      <div class="col-lg-4 col-md-12">
+        <img
+          src="https://images.unsplash.com/photo-1526336024174-e58f5cdd8e13?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8Y2F0c3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+          class="cat h-100 text-center" alt="Cool Cat">
+        <p>See the Floof</p>
       </div>
-      <div class="  col-4 md-col-12 d-flex d-md-block text-center justify-content-center ">
-        <div class="card ">
-          <img class=" card-img-top cat3">
-          <div class=" card-body">
-            <h4 class=" card-title text-center">Adopt the Floof</h4>
-            <p class=" card-text"></p>
-          </div>
-        </div>
+      <div class="col-lg-4 col-md-12">
+        <img
+          src="https://images.unsplash.com/flagged/photo-1557427161-4701a0fa2f42?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjh8fGNhdHN8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+          class="cat h-100 text-center" alt="Cool Cat">
+        <p></p>
       </div>
-      <div class=" col-4 md-col-12 d-flex d-md-block text-center justify-content-center ">
-        <div class="card ">
-          <img class=" card-img-top cat4">
-          <div class=" card-body">
-            <h4 class=" card-title text-center">Love the Floof</h4>
-            <p class="card-text"></p>
-          </div>
-        </div>
+      <div class="col-lg-4 col-md-12">
+        <img
+          src="https://images.unsplash.com/photo-1455970022149-a8f26b6902dd?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGNhdHN8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+          class="cat h-100 text-center" alt="Cool Cat">
+        <p></p>
       </div>
     </div>
 
     <div class="row mt-5">
       <div class="col-6 md-col-12 d-flex d-md-block text-center justify-content-center ">
-        <iframe width=500px height=500px class="d-md-block text-center justify-content-center "
-          src="https://www.youtube.com/embed/jHWKtQHXVJg">
+        <iframe width=500px height=500px src="https://www.youtube.com/embed/jHWKtQHXVJg">
         </iframe>
       </div>
       <div class="col-6 md-col-12 d-flex d-md-block  justify-content-center text-light">
@@ -126,23 +124,24 @@
     </container>
   </main>
 
-  <footer class="container">
-    <div class="row container-fluid">
+  <footer class="container-fluid sticky-bottom">
+    <div class="row text-light">
       <div class="col-4 text-center">
         <div>GetaCat</div>
-        <div> <a href="https://goo.gl/maps/ojtqRVDYMNcTLK9M8">Come See Our Cats!</a></div>
+        <div> <a class="text-light" href="https://goo.gl/maps/ojtqRVDYMNcTLK9M8">Come See Our Cats!</a></div>
       </div>
       <div class="col-4 justify-content-around d-flex">
-        <a href="https://www.apple.com/app-store/" target="_blank"><i class="mdi mdi-apple"></i></a>
+        <a href="https://www.apple.com/app-store/" target="_blank"><i class="mdi text-light fa-lg mdi-apple"></i></a>
         <a href="https://play.google.com/store?&utm_source=na_Med&utm_medium=hasem&utm_content=Nov0520&utm_campaign=Evergreen&pcampaignid=MKT-EDR-na-us-1000189-Med-hasem-py-Evergreen-Nov0520-Text_Search_BKWS-id_100742_|EXA|ONSEM_kwid_43700045371544919&gclid=CjwKCAjwt8uGBhBAEiwAayu_9XE87aUweaKF_51Mpo4n2DORl8CgjjtX6NN1AJb2M-V7wnX1vB7dbxoCmFQQAvD_BwE"
-          target="_blank"><i class="mdi mdi-android"></i></a>
+          target="_blank"><i class="mdi text-light fa-lg mdi-android"></i></a>
 
 
       </div>
-      <div class="col-4 d-flex justify-content-around">
-        <a href="https://www.facebook.com" target="_blank"><i class="mdi mdi-facebook"></i></a>
-        <a href="https://www.twitter.com" target="_blank"><i class="mdi mdi-twitter"></i></a>
-        <a href="https://www.instagram.com" target="_blank"><i class="mdi mdi-instagram"></i></a>
+      <div class="col-4 d-flex justify-content-around ">
+        <a class="text-light fa-lg" href="https://www.facebook.com" target="_blank"><i class="mdi mdi-facebook"></i></a>
+        <a class="text-light fa-lg" href="https://www.twitter.com" target="_blank"><i class="mdi mdi-twitter"></i></a>
+        <a class="text-light fa-lg" href="https://www.instagram.com" target="_blank"><i
+            class="mdi mdi-instagram"></i></a>
 
       </div>
 
